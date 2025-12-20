@@ -1,0 +1,18 @@
+.play-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 2%;
+  background: #f9f9f9;
+  gap: 20px;
+}
+
+/* Left video section */
+.play-video {
+  flex-basis: 70%;
+}
+
+/* Right recommended section */
+.recommended {
+  flex-basis: 28%;
+}

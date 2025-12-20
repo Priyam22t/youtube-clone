@@ -1,0 +1,131 @@
+.sidebar {
+  position: fixed;
+  top: 70px; /* below navbar */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  padding: 15px 0;
+  border-right: 1px solid #e5e5e5;
+  overflow-y: auto;
+}
+
+.shortcut-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 6px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.side-link:hover {
+  background-color: #f0f0f0;
+}
+
+.side-link img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.side-link p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+.subscribed-list {
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+.subscribed-list h3 {
+  font-size: 14px;
+  color: #606060;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.subscribed-list .side-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.subscribed-list .side-link img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.small-sidebar {
+  width: 70px !important;
+}
+
+.small-sidebar p {
+  display: none;
+}
+
+.small-sidebar .side-link {
+  justify-content: center;
+}
+
+.small-sidebar .subscribed-list h3 {
+  display: none;
+}
+
+.small-sidebar .subscribed-list img {
+  width: 35px;
+  height: 35px;
+}
+.side-link.active {
+  background: #e5e5e5;        /* light grey like YouTube */
+  border-radius: 10px;
+}
+
+/* Make text bold when active */
+.side-link.active p {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Make icon slightly darker on active */
+.side-link.active img {
+  filter: brightness(0.4);
+}
+.sidebar {
+  padding-top: 70px;  /* Ensure it sits below navbar */
+  background: #fff;
+}
+
+body.dark-mode .sidebar {
+  background: #181818;
+}
+
+.sidebar a,
+.side-link {
+  text-decoration: none;
+  color: #000;
+}
+
+body.dark-mode .side-link p {
+  color: #fff !important;
+}
+

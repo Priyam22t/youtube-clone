@@ -1,0 +1,81 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+    cursor: pointer;
+}
+flex-div{
+    display: flex;
+    align-items: center;
+}
+/* Smooth theme animation */
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 DARK MODE */
+body.dark-mode {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* Navbar */
+body.dark-mode nav {
+  background: #181818 !important;
+  border-bottom: 1px solid #333;
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Search box */
+body.dark-mode .nav-middle input {
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+body.dark-mode .nav-middle img {
+  background: #333;
+  border: 1px solid #444;
+}
+
+/* Feed cards */
+body.dark-mode .card {
+  background: #181818;
+  border-color: #333;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .card h3,
+body.dark-mode .card p {
+  color: white;
+}
+
+/* Sidebar */
+body.dark-mode .sidebar {
+  background: #181818;
+}
+
+body.dark-mode .side-link p {
+  color: white;
+}
+
+/* Video page */
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode span {
+  color: white !important;
+}

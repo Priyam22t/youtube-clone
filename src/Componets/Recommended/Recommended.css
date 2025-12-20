@@ -1,0 +1,103 @@
+/* Entire recommended container */
+.recommended {
+  width: 30%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Recommended video item */
+.side-video-list {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  transition: background 0.25s ease, transform 0.2s ease;
+  align-items: flex-start;
+}
+
+/* Hover effect */
+.side-video-list:hover {
+  background: #f2f2f2;
+  transform: scale(1.01);
+}
+
+/* Thumbnail — square & slightly bigger */
+.side-video-list img {
+  width: 38%;              /* keep it proportional */
+  height: 100px;           /* square-ish */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Video info section */
+.vid-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Title */
+.vid-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+
+  /* allow up to 2 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  
+  -webkit-box-orient: vertical;
+}
+
+/* Channel name */
+.vid-info p:nth-child(2) {
+  font-size: 12px;
+  color: #606060;
+  margin: 0;
+}
+
+/* Views */
+.vid-info p:nth-child(3) {
+  font-size: 12px;
+  color: #7a7a7a;
+  margin: 0;
+}
+.recommended a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recommended a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 992px) {
+  .recommended {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .side-video-list img {
+    width: 140px;
+    height: 80px;
+  }
+}
+
+/* ============= EXTRA SMALL MOBILE ============= */
+@media (max-width: 500px) {
+  .side-video-list {
+    gap: 8px;
+  }
+
+  .side-video-list img {
+    width: 120px;
+    height: 70px;
+  }
+}

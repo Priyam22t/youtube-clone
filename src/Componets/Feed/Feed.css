@@ -1,0 +1,54 @@
+.feed {
+  padding: 90px 20px 20px;   /* Push down from navbar */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 25px;
+}
+
+/* Video card */
+.card {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.card h3,
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+  color: inherit;
+}
+
+/* --- DARK MODE FIX --- */
+body.dark-mode .feed {
+  background: #0f0f0f;
+}
+
+body.dark-mode .card {
+  color: white !important;
+}
+
+body.dark-mode .card img {
+  border: 1px solid #222;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .feed {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    padding: 90px 10px 10px; 
+  }
+}

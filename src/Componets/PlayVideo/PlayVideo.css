@@ -1,0 +1,266 @@
+/* ============================
+   PLAY VIDEO CONTAINER
+============================ */
+.play-video {
+  flex-basis: 68%;
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ============================
+   VIDEO PLAYER
+============================ */
+.play-video iframe {
+  width: 100%;
+  height: 37vw;
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* ============================
+   VIDEO TITLE
+============================ */
+.play-video h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0 12px;
+  color: #222;
+}
+
+/* ============================
+   VIDEO INFO (views + likes)
+============================ */
+.play-video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.play-video-info div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.play-video-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #444;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.play-video-info span:hover {
+  color: #000;
+  transform: scale(1.05);
+}
+
+.play-video-info img {
+  width: 22px;
+}
+
+/* ============================
+   LINE SEPARATOR
+============================ */
+hr {
+  border: none;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 18px 0;
+}
+
+/* ============================
+   CHANNEL SECTION
+============================ */
+.publisher {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 20px 0;
+}
+
+.publisher img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.publisher p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+}
+
+.publisher span {
+  color: #777;
+  font-size: 13px;
+}
+
+.publisher button {
+  margin-left: auto;
+  background: #ff0000;
+  border: none;
+  padding: 10px 22px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.publisher button:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+/* ============================
+   VIDEO DESCRIPTION
+============================ */
+.vid-description {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.vid-description p {
+  font-size: 15px;
+  color: #333;
+  margin: 4px 0 12px;
+}
+
+.vid-description h4 {
+  margin: 12px 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 700;
+}
+
+/* ============================
+   COMMENTS SECTION
+============================ */
+/* ---------------- COMMENT SECTION ---------------- */
+
+.comments-section {
+  margin-top: 30px;
+}
+
+.comment {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.comment img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment > div {
+  flex: 1;
+}
+
+.comment h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.comment h3 span {
+  font-size: 14px;
+  color: #555;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.comment p {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.comment-actions img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.comment-actions span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+}
+
+/* icons inside action */
+.comment-action img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+.comment-action img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 900px) {
+  .play-video {
+    flex-basis: 100%;
+    padding: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .play-video iframe {
+    height: 420px;
+  }
+}
+
+/* ============= MOBILE ============= */
+@media (max-width: 768px) {
+  .play-video iframe {
+    height: 300px;
+  }
+
+  .play-video-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .publisher button {
+    padding: 8px 16px;
+  }
+}
+
+/* ============= SMALL MOBILE ============= */
+@media (max-width: 480px) {
+  .play-video iframe {
+    height: 230px;
+  }
+
+  .comment img {
+    width: 38px;
+    height: 38px;
+  }
+}

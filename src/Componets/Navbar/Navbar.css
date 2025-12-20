@@ -1,0 +1,87 @@
+/* Navbar.css */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 2%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ----- left section ----- */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+/* ----- middle section (search bar) ----- */
+.nav-middle {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-middle input {
+  width: 55%;
+  max-width: 600px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  font-size: 15px;
+  background-color: #f9f9f9;
+}
+
+.nav-middle img {
+  width: 20px;
+  padding: 9px 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+
+/* ----- right section ----- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right img {
+  width: 28px;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 35px;
+  border-radius: 50%;
+}
+nav {
+  height: 65px;
+}
+
+.nav-middle input {
+  height: 40px;
+}
+
+.nav-middle img {
+  height: 40px;
+}

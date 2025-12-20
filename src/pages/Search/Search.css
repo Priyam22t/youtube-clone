@@ -1,0 +1,67 @@
+.search-results {
+  padding: 20px;
+}
+
+.search-card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.search-card img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.search-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.search-card p {
+  color: #555;
+}
+
+.search-card span {
+  font-size: 14px;
+  color: gray;
+}
+.search-card {
+  text-decoration: none !important;
+  color: black;
+}
+
+.search-card h3 {
+  color: #000;
+}
+
+.search-card:hover h3 {
+  text-decoration: underline;
+}
+.search-card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.search-card:hover {
+  background: #f5f5f5;
+}
+
+.search-card img {
+  width: 260px;
+  border-radius: 12px;
+}
+.search-card {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.search-card * {
+  text-decoration: none !important;
+  color: inherit;
+}
