@@ -1,16 +1,174 @@
-# React + Vite
+📺 YouTube Clone (React + YouTube Data API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional YouTube Clone built using React.js and YouTube Data API v3, featuring real-time videos, search, video playback, comments, channel details, recommendations, and dark mode support.
 
-Currently, two official plugins are available:
+This project was developed step-by-step to closely replicate core YouTube features with a modern UI and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Live Features
 
-## React Compiler
+🎥 Trending Videos Feed
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔍 Search Videos
 
-## Expanding the ESLint configuration
+▶️ Watch Video Player
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📊 Real-time Views, Likes & Comments
+
+🗂️ Category-based Filtering
+
+📺 Recommended Videos
+
+🧑‍💻 Channel Details (Subscribers, Channel Info)
+
+💬 Live Comments Section
+
+🌗 Dark Mode Support
+
+📱 Fully Responsive (Mobile + Desktop)
+
+⚡ Fast Routing with React Router
+
+🛠️ Tech Stack
+
+Frontend: React.js (Vite)
+
+Routing: React Router DOM
+
+API: YouTube Data API v3
+
+Styling: CSS (Custom, Responsive)
+
+Date Handling: Moment.js
+
+State Management: React Hooks (useState, useEffect)
+
+Icons & Assets: Custom icons & images
+
+📂 Project Structure
+youtube-clone/
+│
+├── src/
+│   ├── assets/          # Images, icons
+│   ├── Components/
+│   │   ├── Navbar/
+│   │   ├── Sidebar/
+│   │   ├── Feed/
+│   │   ├── PlayVideo/
+│   │   └── Recommended/
+│   │
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── Video/
+│   │   └── Search/
+│   │
+│   ├── data.js          # API key & utility functions
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── public/
+├── package.json
+└── README.md
+
+🔑 Environment Setup (IMPORTANT)
+⚠️ node_modules folder is NOT INCLUDED
+
+Before running the project, you must install dependencies.
+
+Steps to run locally:
+npm install
+npm start
+
+
+or (if using Vite):
+
+npm install
+npm run dev
+
+🔐 YouTube API Setup
+
+Go to Google Cloud Console
+
+Enable YouTube Data API v3
+
+Create an API Key
+
+Add your API key inside src/data.js
+
+export const API_KEY = "YOUR_YOUTUBE_API_KEY";
+
+🔢 Utility Functions
+
+Includes a value converter for views, likes & subscribers:
+
+export const value_converter = (value) => {
+  if (value >= 1000000) return Math.floor(value / 1000000) + "M";
+  if (value >= 1000) return Math.floor(value / 1000) + "K";
+  return value;
+};
+
+🌙 Dark Mode
+
+Toggle between Light / Dark Mode
+
+Dark mode applies globally
+
+CSS variables used for smooth transitions
+
+📱 Responsive Design
+
+Desktop ✔️
+
+Tablet ✔️
+
+Mobile ✔️
+
+Sidebar collapses automatically on smaller screens
+
+⚠️ API Limit Note
+
+YouTube API has daily quota limits
+
+Excessive refresh/search may cause temporary API blocks
+
+Recommended to use your own API key
+
+🧠 Learning Outcomes
+
+Working with real-world APIs
+
+React routing & dynamic params
+
+Handling async data & errors
+
+Component-based architecture
+
+UI/UX best practices
+
+Responsive layouts
+
+State & effect management
+
+🏆 Future Improvements
+
+🔐 User authentication
+
+👍 Like / Dislike persistence
+
+💬 Add reply to comments
+
+📂 Playlists
+
+🔔 Notification system
+
+📈 Watch history
+
+🙌 Acknowledgements
+
+YouTube Data API
+
+React.js Community
+
+Moment.js
+
+Inspiration from YouTube UI
