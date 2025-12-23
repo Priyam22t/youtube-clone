@@ -1,119 +1,84 @@
-📺 YouTube Clone (React + YouTube Data API)
+# 📺 YouTube Clone (React + YouTube Data API)
 
-A fully functional YouTube Clone built using React.js and YouTube Data API v3, featuring real-time videos, search, video playback, comments, channel details, recommendations, and dark mode support.
+A fully functional **YouTube Clone** built using **React.js** and **YouTube Data API v3**, featuring real-time videos, search, video playback, comments, channel details, recommendations, and dark mode support.
 
 This project was developed step-by-step to closely replicate core YouTube features with a modern UI and responsive design.
 
-🚀 Live Features
+---
 
-🎥 Trending Videos Feed
+## 🚀 Live Features
 
-🔍 Search Videos
+- 🔥 Trending Videos Feed  
+- 🔍 Search Videos  
+- ▶️ Watch Video Player  
+- 📊 Real-time Views, Likes & Comments  
+- 🗂️ Category-based Filtering  
+- 📺 Recommended Videos  
+- 👤 Channel Details (Subscribers & Info)  
+- 💬 Live Comments Section  
+- 🌙 Dark Mode Support  
+- 📱 Fully Responsive Design  
 
-▶️ Watch Video Player
+---
 
-📊 Real-time Views, Likes & Comments
+## 🛠️ Tech Stack
 
-🗂️ Category-based Filtering
+- **Frontend:** React.js (Vite)
+- **Routing:** React Router DOM
+- **API:** YouTube Data API v3
+- **Styling:** CSS (Custom + Responsive)
+- **Date Handling:** Moment.js
+- **State Management:** React Hooks
 
-📺 Recommended Videos
+---
 
-🧑‍💻 Channel Details (Subscribers, Channel Info)
+## 📂 Project Structure
 
-💬 Live Comments Section
+```txt
+src/
+ ├── assets/
+ ├── Components/
+ │    ├── Navbar
+ │    ├── Sidebar
+ │    ├── Feed
+ │    ├── PlayVideo
+ │    └── Recommended
+ ├── pages/
+ │    ├── Home
+ │    ├── Video
+ │    └── Search
+ ├── data.js
+ ├── App.jsx
+ └── main.jsx
+⚠️ Important Note (node_modules Missing)
 
-🌗 Dark Mode Support
+The node_modules folder is NOT included in this repository.
 
-📱 Fully Responsive (Mobile + Desktop)
-
-⚡ Fast Routing with React Router
-
-🛠️ Tech Stack
-
-Frontend: React.js (Vite)
-
-Routing: React Router DOM
-
-API: YouTube Data API v3
-
-Styling: CSS (Custom, Responsive)
-
-Date Handling: Moment.js
-
-State Management: React Hooks (useState, useEffect)
-
-Icons & Assets: Custom icons & images
-
-📂 Project Structure
-youtube-clone/
-│
-├── src/
-│   ├── assets/          # Images, icons
-│   ├── Components/
-│   │   ├── Navbar/
-│   │   ├── Sidebar/
-│   │   ├── Feed/
-│   │   ├── PlayVideo/
-│   │   └── Recommended/
-│   │
-│   ├── pages/
-│   │   ├── Home/
-│   │   ├── Video/
-│   │   └── Search/
-│   │
-│   ├── data.js          # API key & utility functions
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── public/
-├── package.json
-└── README.md
-
-🔑 Environment Setup (IMPORTANT)
-⚠️ node_modules folder is NOT INCLUDED
-
-Before running the project, you must install dependencies.
-
-Steps to run locally:
-npm install
-npm start
-
-
-or (if using Vite):
-
+After cloning the project, run the following commands:
 npm install
 npm run dev
-
-🔐 YouTube API Setup
+🔑 YouTube API Setup
 
 Go to Google Cloud Console
 
 Enable YouTube Data API v3
 
-Create an API Key
+Generate an API Key
 
-Add your API key inside src/data.js
-
-export const API_KEY = "YOUR_YOUTUBE_API_KEY";
-
-🔢 Utility Functions
-
-Includes a value converter for views, likes & subscribers:
-
+Add it inside src/data.js
+export const API_KEY = "YOUR_API_KEY_HERE";
 export const value_converter = (value) => {
   if (value >= 1000000) return Math.floor(value / 1000000) + "M";
   if (value >= 1000) return Math.floor(value / 1000) + "K";
   return value;
 };
-
 🌙 Dark Mode
 
-Toggle between Light / Dark Mode
+Toggle between Light & Dark themes
 
-Dark mode applies globally
+Applies globally
 
-CSS variables used for smooth transitions
+Smooth UI transitions
 
 📱 Responsive Design
 
@@ -123,52 +88,32 @@ Tablet ✔️
 
 Mobile ✔️
 
-Sidebar collapses automatically on smaller screens
+Collapsible sidebar
 
-⚠️ API Limit Note
-
-YouTube API has daily quota limits
-
-Excessive refresh/search may cause temporary API blocks
-
-Recommended to use your own API key
-
-🧠 Learning Outcomes
+🧠 What I Learned
 
 Working with real-world APIs
 
-React routing & dynamic params
+React Router dynamic routing
 
-Handling async data & errors
+Async data handling
 
 Component-based architecture
 
-UI/UX best practices
-
-Responsive layouts
+Responsive UI design
 
 State & effect management
 
-🏆 Future Improvements
+🔮 Future Improvements
 
-🔐 User authentication
+User Authentication
 
-👍 Like / Dislike persistence
+Like / Dislike persistence
 
-💬 Add reply to comments
+Comment replies
 
-📂 Playlists
+Playlists
 
-🔔 Notification system
+Watch history
 
-📈 Watch history
-
-🙌 Acknowledgements
-
-YouTube Data API
-
-React.js Community
-
-Moment.js
-
-Inspiration from YouTube UI
+Notifications
